@@ -31,11 +31,12 @@ class listener(StreamListener):
             time_ms = data['timestamp_ms']
             analysis = TextBlob(tweet)
             sentiment = analysis.sentiment.polarity
-            print(time_ms)
+            # print(time_ms)
             c.execute("INSERT INTO sentiment (unix, tweet, sentiment) VALUES (?,?,?)",(time_ms,tweet,sentiment))
             conn.commit()
         except KeyError as e:
-            print(str(e))
+            # print(str(e))
+            pass
         return(True)
 
     def on_error(self, status):

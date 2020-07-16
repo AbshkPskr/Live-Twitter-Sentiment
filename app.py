@@ -22,10 +22,10 @@ class thread(threading.Thread):
         self.thread_name = thread_name 
         self.thread_ID = thread_ID 
     def run(self): 
-        print(str(self.thread_name) +"  "+ str(self.thread_ID)); 
+        # print(str(self.thread_name) +"  "+ str(self.thread_ID)); 
         twitter.get_tweets()
   
-thread1 = thread("GFG", 1001)   
+thread1 = thread("", 1001)   
 thread1.start() 
 
 
@@ -57,8 +57,8 @@ def update_graph(term,n):
     Y = df.smoothe_sentiment.values[-100:]
     # print(df['smoothe_sentiment'][-1])
     # print(Y)
-    print('--------------------')
-    print(len(df))
+    # print('--------------------')
+    # print(len(df))
     # print(min(Y))
     # print(max(Y))
     # global X
