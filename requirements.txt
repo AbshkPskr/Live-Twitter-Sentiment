@@ -1,4 +1,4 @@
-gunicorn==19.3.0
+gunicorn==19.5.0
 aiofiles==0.5.0
 aiohttp==3.6.2
 antiorm==1.2.1
