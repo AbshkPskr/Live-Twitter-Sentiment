@@ -10,20 +10,20 @@ import pandas as pd
 import sqlite3
 import time
 
-# import threading 
-# import twitter
+import threading 
+import twitter
   
-# class thread(threading.Thread): 
-#     def __init__(self, thread_name, thread_ID): 
-#         threading.Thread.__init__(self) 
-#         self.thread_name = thread_name 
-#         self.thread_ID = thread_ID 
-#     def run(self): 
-#         print(str(self.thread_name) +"  "+ str(self.thread_ID)); 
-#         twitter.get_tweets()
+class thread(threading.Thread): 
+    def __init__(self, thread_name, thread_ID): 
+        threading.Thread.__init__(self) 
+        self.thread_name = thread_name 
+        self.thread_ID = thread_ID 
+    def run(self): 
+        print(str(self.thread_name) +"  "+ str(self.thread_ID)); 
+        twitter.get_tweets()
   
-# thread1 = thread("GFG", 1001)   
-# thread1.start() 
+thread1 = thread("GFG", 1001)   
+thread1.start() 
 
 app = dash.Dash(__name__)
 
