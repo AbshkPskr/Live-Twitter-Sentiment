@@ -11,11 +11,11 @@ import sqlite3
 import time
 
 import threading 
-import twitter
 
-app = dash.Dash()
+app = dash.Dash(__name__)
 server = app.server
   
+import twitter
 class thread(threading.Thread): 
     def __init__(self, thread_name, thread_ID): 
         threading.Thread.__init__(self) 
