@@ -12,6 +12,9 @@ import time
 
 import threading 
 import twitter
+
+app = dash.Dash()
+server = app.server
   
 class thread(threading.Thread): 
     def __init__(self, thread_name, thread_ID): 
@@ -25,7 +28,6 @@ class thread(threading.Thread):
 thread1 = thread("GFG", 1001)   
 thread1.start() 
 
-app = dash.Dash(__name__)
 
 app.layout = html.Div(
     [
