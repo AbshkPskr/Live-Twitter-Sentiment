@@ -64,4 +64,4 @@ def get_tweets():
     twitterStream = Stream(auth, listener())
     twitterStream.filter(track=["a","e","i","o","u"],stall_warnings=True)
     
-get_tweets()
+# get_tweets()
