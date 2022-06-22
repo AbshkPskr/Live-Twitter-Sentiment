@@ -32,7 +32,7 @@ mccabe==0.6.1
 multidict==4.7.6
 multithread==1.0.1
 nltk==3.5
-numpy==1.19.0
+numpy==1.22.0
 oauthlib==3.1.0
 pandas==1.0.5
 pandas-datareader==0.9.0
